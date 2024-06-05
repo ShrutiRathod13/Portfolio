@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Project</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        body {
+            background-color: #282c3f;
+            color: #ff4956;
+
+        }
+
+        .navbar {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background: #282c3f;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 24px;
+            color: #ff4956;
+        }
+
+        .nav-link {
+            font-size: 18px;
+            margin-right: 16px;
+            color: #ff4956;
+        }
+
+        .nav-link:hover {
+            color: white;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        img {
+            max-width: 200px;
+            max-height: 280px;
+        }
+
+        .card {
+            background-color: #282c3f;
+            color: #ffffff;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .card-title {
+            color: #ff4956;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .list-group-item {
+            background-color: #282c3f;
+            border: none;
+            color: #ffffff;
+        }
+
+        .hobby-img {
+            max-width: 400px;
+            max-height: 250px;
+            object-fit: cover;
+            border-bottom: 1px solid #444;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a href="#introduction" class="navbar-brand">Shruti Rathod</a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#introduction" class="nav-link" aria-current="page">Introduction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#aboutme" class="nav-link">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#certification" class="nav-link">Certifications & Awards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#hobbies" class="nav-link">Hobbies & Interests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#testimonials" class="nav-link">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+
+        <!--INTRODUCTION-->
+        <div class="container-fluid py-5" id="introduction">
+            <div class="container">
+                <!-- <h2 class="mb-4">Introduction</h2> -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="display-2">SHRUTI RATHOD</h1>
+                        <h2 class="h4 mb-4 text-white display-6">Front End Intern</h2>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <strong>Email: </strong>
+                                <a href="mailto:shrutirathod1302@gmail.com"
+                                    class="text-decoration-none text-white">shrutirathod1302@gmail.com</a>
+                            </li>
+                            <li class="mb-3">
+                                <strong>Phone: </strong>
+                                <a href="tel:+919638979808" class="text-decoration-none text-white">+91 96389
+                                    79808</a>
+                            </li>
+                            <li class="mb-3">
+                                <strong>LinkedIn: </strong>
+                                <a href="https://www.linkedin.com/in/shruti-rathod-000000"
+                                    class="text-decoration-none text-white">linkedin.com/in/shruti-rathod-000000</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--ABOUT ME-->
+        <div class="container mt-5" id="aboutme">
+            <div class="row">
+                <div class="col pt-4 pt-lg-0 content-center">
+                    <img src="images/Shruti Rathod.jpg" alt="Your Photo" class="img-fluid rounded float-start m-5">
+
+                    <div class="col-md-9 m-5">
+                        <h1 class="mb-3">About Me</h1>
+                        <p class="text-white ">Hello! My name is Shruti Rathod, and I am a passionate and dedicated
+                            graphic designer and
+                            front-end developer. I hold a Bachelor of Computer Applications (BCA) degree and am
+                            currently
+                            pursuing my Master of Computer Applications (MCA). Throughout my academic journey, I have
+                            developed a keen interest in creating visually appealing and user-friendly designs. I thrive
+                            on
+                            the challenge of transforming complex problems into simple, beautiful, and intuitive
+                            designs. I
+                            am enthusiastic about learning new technologies and improving my skills every day,
+                            constantly
+                            seeking opportunities to grow and excel in my field. My goal is to combine my technical
+                            expertise and creativity to deliver exceptional user experiences. I look forward to
+                            contributing
+                            my talents to innovative and impactful projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--SKILLS-->
+        <h1 class="mb-4 mt-4 text-center" id="skills">Skills</h1>
+
+        <!--Technical Skills-->
+        <div class="mb-4">
+            <h4>Technical Skills</h4>
+            <div class="feature-box feature-box-small bg-4">
+                <div class="icon">
+                    <i class="bx bxl-html"></i>
+                </div>
+                <h6>HTML</h6>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">HTML</li>
+                <li class="list-group-item">CSS</li>
+                <li class="list-group-item">JavaScript</li>
+                <li class="list-group-item">jQuery</li>
+                <li class="list-group-item">Angular</li>
+                <li class="list-group-item">PHP</li>
+                <li class="list-group-item">Python</li>
+                <li class="list-group-item">C++</li>
+                <li class="list-group-item">Java</li>
+            </ul>
+        </div>
+
+        <!--Soft Skills-->
+        <div>
+            <h4>Soft Skills</h4>
+            <ul class="list-group">
+                <li class="list-group-item">Effective Communication</li>
+                <li class="list-group-item">Problem-solving</li>
+                <li class="list-group-item">Adaptability</li>
+                <li class="list-group-item">Teamwork and Collaboration</li>
+                <li class="list-group-item">Attention to Detail</li>
+                <li class="list-group-item">Time Management</li>
+                <li class="list-group-item">Continuous Learning</li>
+                <li class="list-group-item">Creativity</li>
+            </ul>
+        </div>
+
+        <!--PROJECTS-->
+        <div class="container mt-5" id="projects">
+            <h1 class="text-center mb-4">My Projects</h1>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Event Management Website</h5>
+                            <p class="card-text">
+                                A website where the client can choose the venue based on the location of their
+                                preference and book various vendors as per their requirement. Booking will be confirmed
+                                once the vendor sends the confirmation mail. It also provides the facility for vendors
+                                to register their business on this website which also helps the local vendors to get
+                                more reach.
+                            </p>
+                            <p class="card-text"><small class="text-muted">Technologies used: HTML, CSS, JavaScript,
+                                    Bootstrap, PHP</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Event Management Website</h5>
+                            <p class="card-text">
+                                A website where the client can choose the venue based on the location of their
+                                preference and book various vendors as per their requirement. Booking will be confirmed
+                                once the vendor sends the confirmation mail. It also provides the facility for vendors
+                                to register their business on this website which also helps the local vendors to get
+                                more reach.
+                            </p>
+                            <p class="card-text"><small class="text-muted">Technologies used: HTML, CSS, JavaScript,
+                                    Bootstrap, PHP</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Event Management Website</h5>
+                            <p class="card-text">
+                                A website where the client can choose the venue based on the location of their
+                                preference and book various vendors as per their requirement. Booking will be confirmed
+                                once the vendor sends the confirmation mail. It also provides the facility for vendors
+                                to register their business on this website which also helps the local vendors to get
+                                more reach.
+                            </p>
+                            <p class="card-text"><small>Technologies used: HTML, CSS, JavaScript,
+                                    Bootstrap, PHP</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--EDUCATION-->
+        <div class="container d-flex justify-content-center align-items-center" id="education">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center mt-4">Education</h2>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Degree:</h5>
+                            <p class="card-text">Master of Computer Application</p>
+                            <h5 class="card-title">Institute Name:</h5>
+                            <p class="card-text">NIRMA INSTITUTE OF TECHNOLOGY, AHMEDABAD</p>
+                            <h5 class="card-title">Graduation year:</h5>
+                            <p class="card-text">2025</p>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Degree:</h5>
+                            <p class="card-text">Bachelor of Computer Application</p>
+                            <h5 class="card-title">Institute Name:</h5>
+                            <p class="card-text">GLS INSTITUTE OF COMPUTER TECHNOLOGY, AHMEDABAD</p>
+                            <h5 class="card-title">Graduation year:</h5>
+                            <p class="card-text">2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--HOBBIES AND INTERESTS-->
+
+        <div class="container mt-5">
+            <h1 class="mb-4 mt-4 text-center" id="hobbies">Hobbies and Interests</h1>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/travel.jpg" class="card-img-top hobby-img img-fluid rounded m-3"
+                            alt="Travel Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Travel</h5>
+                            <p class="card-text">I love exploring new places, cultures, and cuisines. Traveling helps me
+                                broaden my perspective and gain new experiences.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/dance.jpeg" class="card-img-top hobby-img img-fluid rounded m-3"
+                            alt="Dancing Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Dancing</h5>
+                            <p class="card-text">Dancing is my passion. It keeps me fit and allows me to express myself
+                                creatively. I enjoy learning new dance forms and performing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/public speaking.webp" class="card-img-top hobby-img img-fluid rounded m-3"
+                            alt="Public Speaking Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Public Speaking</h5>
+                            <p class="card-text">Public speaking is a hobby that I cherish. It helps me build
+                                confidence, improve my communication skills, and connect with audiences effectively.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
